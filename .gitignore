@@ -5,3 +5,4 @@
 /cmake-build-debug-mingw/CMakeFiles/
 /cmake-build-debug-wsl/
 /cmake-build-debug-wsl/CMakeFiles/
+.gitignore
