@@ -1,7 +1,8 @@
 #include "class_d.h"
 
 data &param_stack::operator[](const int index) {
-    return stack[index];
+    if (index < stack.size() && index >= 0) return stack[index];
+    else throw std::invalid_argument("No such element");
 }
 
 void param_stack::add() {

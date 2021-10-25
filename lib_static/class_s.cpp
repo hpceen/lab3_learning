@@ -1,7 +1,7 @@
 #include "class_s.h"
 
 data &param_stack::operator[](const int index) {
-    if (index <= cur_size - 1 && index >= 0) return stack[index];
+    if (index < cur_size && index >= 0) return stack[index];
     else throw std::invalid_argument("No such element");
 }
 
